@@ -4,9 +4,15 @@ module.exports = function(app) {
 	const cloudinary = require('cloudinary');
 	// cloudinary config
 	cloudinary.config({ 
+<<<<<<< HEAD
 	  cloud_name: 'usuario', 
 	  api_key: 'api_key', 
 	  api_secret: 'api_secret' 
+=======
+	  cloud_name: 'seu nome de usuario', 
+	  api_key: 'seu key', 
+	  api_secret: ' sua api secret' 
+>>>>>>> 68ffad812f073c871f4ede7b1ee0e3f29b4606aa
 	});
 
 	// rotas 
