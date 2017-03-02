@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>upload de imagem com multer, cloudinary e mongoose. </title>
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<h1 class="text-center jumbotron "> FORMULARIO </h1>
+				<form action="/upload" method="POST" enctype="multipart/form-data">
+				    <div class="form-group">
+				        <label for="Nome">Nome</label>
+				        <input type="text" class="form-control"  placeholder="Nome" name="nome">
+				    </div>
+				    <div class="form-group">
+					    <label for="Data">Data de Nascimento</label>
+					    <input type="date" class="form-control"  placeholder=" Data de Nascimento" name="data">
+				    </div>
+				    <div class="form-group">
+					    <label for="Foto">Foto</label>
+					    <input type="file" name="img">
+					    <p class="help-block">escolha uma foto para fazer upload.</p>
+				    </div>
+				    <button type="submit" class="btn btn-default">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 bg bg-info">
+				<h5>Nome</h5>
+				<p class="">{{data.nome}}</p>
+			</div>
+			<div class="col-md-3 bg bg-primary">
+			<h5>Data de Nascimento</h5>
+				<p class=""> {{data.data}}</p>
+			</div>
+			<div class="col-md-6 bg bg-danger">
+			<h5>Foto</h5>
+				<img src="{{data.img}}" alt="" height="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

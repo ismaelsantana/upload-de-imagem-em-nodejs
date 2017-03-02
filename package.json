@@ -1,0 +1,20 @@
+{
+  "name": "multerjscloudinary",
+  "version": "1.0.0",
+  "description": "integrar multer js com cloudinary",
+  "main": "serve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ismael Santana",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "cloudinary": "^1.7.1",
+    "express": "^4.15.0",
+    "express-load": "^1.1.15",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.8.5",
+    "multer": "^1.3.0"
+  }
+}
