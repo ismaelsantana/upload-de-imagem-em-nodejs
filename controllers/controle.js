@@ -4,9 +4,9 @@ module.exports = function(app) {
 	const cloudinary = require('cloudinary');
 	// cloudinary config
 	cloudinary.config({ 
-	  cloud_name: 'ismaelsantana', 
-	  api_key: '731455129496764', 
-	  api_secret: 'U83loraehc5WJG-GR68YEvmTswI' 
+	  cloud_name: 'seu nome de usuario', 
+	  api_key: 'seu key', 
+	  api_secret: ' sua api secret' 
 	});
 
 	// rotas 
