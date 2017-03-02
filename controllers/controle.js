@@ -28,7 +28,7 @@ module.exports = function(app) {
 			  	 }); 
 			});	
 		}
-	}
+	} 
 
   return rotas;
 };
